@@ -14,6 +14,7 @@ public class TestPropertyController {
                 )
             );
         }
+        //tesing
         insert properties;
     }
     static testMethod void testGetPropertyList() {
