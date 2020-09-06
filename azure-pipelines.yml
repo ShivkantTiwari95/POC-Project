@@ -12,7 +12,14 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: sfpwowerscript-authenticateorg-task@9
+  inputs:
+    method: 'Credentials'
+    username: 'stiwari@cloudsciencelabs.com'
+    password: 'q1w2e3r4t5'
+    securitytoken: 'c2kys63srzmQjU4E0guofJSc'
+    alias: 'ShivOrg'
+    isdevhub: true
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
