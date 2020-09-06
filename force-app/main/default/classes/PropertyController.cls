@@ -8,11 +8,13 @@ public with sharing class PropertyController {
     ) {
         String key = '%' + searchKey + '%';
         return [
+
             SELECT
                 Id,
                 address__c,
                 city__c,
                 state__c,
+                
                 description__c,
                 price__c,
                 baths__c,
