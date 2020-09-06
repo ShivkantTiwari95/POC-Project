@@ -14,7 +14,6 @@ public with sharing class PropertyController {
                 address__c,
                 city__c,
                 state__c,
-                
                 description__c,
                 price__c,
                 baths__c,
@@ -45,6 +44,7 @@ public with sharing class PropertyController {
         Integer pageSize,
         Integer pageNumber
     ) {
+        //This si sca
         maxPrice = Decimal.valueOf(maxPrice + '');
         minBedrooms = Integer.valueOf(minBedrooms + '');
         minBathrooms = Integer.valueOf(minBathrooms + '');
