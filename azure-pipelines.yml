@@ -2,6 +2,8 @@
 
 trigger:
 - master
+- task: sfpwowerscript-installsfdx-task@7
+  
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -9,6 +11,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+
+  
+  
+    
 - task: sfpwowerscript-authenticateorg-task@9
   inputs:
     method: 'Credentials'
@@ -21,5 +27,5 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: sfpwowerscript-installsfdx-task@7
+
 
